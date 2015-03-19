@@ -44,6 +44,16 @@ type of activation function. Furthermore a list of the implemented activation fu
 - poslin: positive linear\cr
 - purelin: linear\cr
 }
+\item{C}{
+complexity parameter.\cr
+ \bold{Reference:} Huang, G.B.: Extreme learning machine for regression and multiclass classification. IEEE Transactions on Systems, Man and Cybernetics-Part B: Cybernetics 42(2), 513–529 (2012).\cr 
+}
+\item{GPU}{
+GPU activation option.\cr
+- if GPU=FALSE: run the computations in the CPU.\cr
+- if GPU=TRUE: GPU-accelerated version.\cr
+In order to use GPU option \bold{gputools} package is required.\cr
+}
 \item{\dots}{not used.}
 }
 \details{
@@ -61,7 +71,7 @@ returns the trained neural network, an object of class \code{elmNN}.
 see \code{\link[elmNN]{elmNN-package}} documentation.
 }
 \author{
-Alberto Gosso
+Alberto Gosso, Fco. Javier Martinez de Pison, Manuel Alia-Martinez, Ruben Urraca. www.mineriadatos.com
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~

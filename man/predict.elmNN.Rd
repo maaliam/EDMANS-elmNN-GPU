@@ -18,6 +18,12 @@ an object of class \code{elmNN} ( a trained neural network )
   \item{newdata}{
 (optional) a new data set to calculate output from the model. If missing, \code{predict} returns the output prediction from the training set.  
 }
+\item{GPU}{
+GPU activation option.\cr
+- if GPU=FALSE: run the computations in the CPU.\cr
+- if GPU=TRUE: GPU-accelerated version.\cr
+In order to use GPU option gputools package is required.\cr
+}
 \item{\dots}{not used.}
 }
 

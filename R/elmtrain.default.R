@@ -110,12 +110,12 @@ function(x,y,nhid,actfun,C=NULL,reduc=1.0,gamma=1.0,largeDB=TRUE,GPU=FALSE,...) 
     }
     if (is.null(C))
     {
-      # Without Complexity Parameter   
+      # Without Cost Parameter   
       aux <- ginv(t(H), tol = sqrt(.Machine$double.eps))
       outweight <- gpuMatMult(aux,t(T))    
     } else {
       
-      # With Complexity Parameter
+      # With Cost Parameter
       
       if(C==0) stop("ERROR: C must be > 0")
       if (largeDB)
